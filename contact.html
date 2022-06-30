@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+      CONTACT US 
+        </title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+        <nav class="nav nav_top">
+        <div class="logo">
+       <img src="logo.png"  width="700" height="75">
+        </div>
+     <div class="navside">
+         <a href="about.html" target="_black">ABOUT US</a>
+         <a href="service.html" target="_black">SERVICES</a>
+         <a href="blog.html">BLOGS</a>
+         <a href="contact.html" target="_black">CONTACT US</a>
+         <a href=" ">LOGIN/REGISTER</a>
+     </div>
+       </nav>
+
+       <div class="contact_container">
+           <h2>Contact us</h2>
+       <div class="g-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222.40727665569446!2d75.78368152920356!3d26.88710082413359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db52d8754546b%3A0x14eb15b22aae762e!2sAravali%20Heights!5e0!3m2!1sen!2sin!4v1638449201841!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+
+          <div class="contact_content">
+              <p><b>Address: 40 bhagwati nagar 2,kartarpura,Jaipur,Rajasthan 302006</b></p>
+              <p><b>Call : +91 8493498347  +1401 345563</b></p>
+              <p><b>Mail : panwaraniket2002@gmail.com</b></p>
+
+          </div>
+       </div>
+
+       <div class="feed" method="POST">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="feedback">
+                <input type="text" name="NAME" placeholder="NAME"><br>
+                <input type="email" name="EMAIL ID" placeholder="EMAIL ID"><br>
+                <input type="number" name="MOBILE NUMBER" placeholder="CONTACT NUMBER"><br>
+                <textarea rows="5" cols="7" name="FEEDBACK" placeholder="Write a review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+     <footer class="footer">
+        <div class="footer_logo">
+            <a href="index.html"><img src="logo.png"  width="250" height="75"></a>
+             </div>
+             
+             <div class="pages">
+                <h2>Pages</h2>
+                 <a href="about.html" target="_black">About Us</a>|
+                 <a href="service.html" target="_black">Services</a>|
+                 <a href="#">Blogs</a>|
+                 <a href="#">Login</a>|
+                 <a href="#">Sign up</a>|
+
+             </div>
+             
+
+             <div class="documents">
+                <h2>Documents</h2>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms Of Use</a>|
+                <a href="">Refund Policy</a>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.instagram.com/" target="_black"><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/TheElonmusk/" target="_black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <a href="https://api.WhatsApp.com/send?phone= +917610037773" target="_black"><i class="fa fa-whatsapp " aria-hidden="true"></i></a>
+            <a href="mailto: panwaraniket2002@gmail.com"><i class="fa fa-envelope-o " aria-hidden="true"></i></a>
+            <a href="tel: +917610037773 "><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <hr class="hr">
+            <p class="cop">
+             Copyright &copy; 2021 1stop.All rights reserved
+            </p>
+     </footer>
+
+     <script type="text/javascript">
+         
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxRAPJgRtPAHCjwReS4wdmtL5gTr2i1F-U-kxmjy1Gj3bKv-jjqU3y5Ow7qx_t0LBxh5w/exec"
+    const form = document.forms['feedback']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for your feedback"))
+        .catch(error => console.error('Error!', error.message))
+    })
+     </script>
+</body>
+</html>
