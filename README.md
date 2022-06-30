@@ -1,0 +1,2 @@
+# Multi-page_E-Commerce_Website
+This project is a multipage e-commerce website where  People will be shown various products like sofa set,tables  And other furnitures. They can buy products using buy button Under each product and can also browse for more products In the services page.  The website is also provided with a contact us page in which buyers can contact for and queries and can also give their reviews.
